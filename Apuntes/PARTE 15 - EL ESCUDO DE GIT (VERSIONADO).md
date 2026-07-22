@@ -38,3 +38,22 @@ Bash
 git remote add origin https://github.com/TU_USUARIO/playwright_python_pom.git
 git branch -M main
 git push -u origin main
+
+
+# 🦾 SDET MASTER BIBLE: PARTE 15 - EL ESCUDO DE GIT (VERSIONADO)
+*Esta sección explica cómo mover tu código entre la oficina y casa sin romper nada.*
+
+## 🚀 1. COMANDOS DE TRABAJO DIARIO (El Ciclo de Vida)
+Cada vez que termines una hora de práctica, haz esto para guardar tu progreso:
+
+1. `git add .` (Mete todos los cambios en la maleta).
+2. `git commit -m "mensaje descriptivo"` (Cierra la maleta y le pone una etiqueta).
+3. `git push` (Envía la maleta a la nube de GitHub).
+
+## 📥 2. CÓMO RECUPERAR EL CÓDIGO EN OTRO PC
+Si llegas a casa y quieres lo que hiciste en la ofi:
+*   **La primera vez:** `git clone https://github.com/tu_usuario/tu_repo.git`
+*   **Las siguientes veces:** `git pull` (Baja los cambios nuevos de la nube).
+
+## 🚫 3. LA REGLA DE ORO DEL .gitignore
+Nunca subas la carpeta `.venv`. Cada PC debe tener la suya propia. Git la ignorará automáticamente gracias al archivo `.gitignore` que creamos.
