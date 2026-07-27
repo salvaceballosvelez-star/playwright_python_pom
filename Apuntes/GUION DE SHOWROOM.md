@@ -32,3 +32,6 @@ Qué decir: "El hook de apertura automática está restringido por la política 
 Sobre el POM: "He estructurado el proyecto bajo Page Object Model para que, si el equipo de desarrollo cambia un ID, solo tengamos que actualizar un único punto de entrada en la capa de 'pages'."
 Sobre las Fixtures: "Uso inyección de dependencias en el conftest.py para gestionar el ciclo de vida del navegador, permitiendo que los tests se teletransporten a cualquier estado de la aplicación."
 Sobre Allure: "Esta capa de reporting no solo es visual; nos permite adjuntar evidencias como screenshots o logs de red automáticamente cuando un test falla en el pipeline."
+
+
+#### sincornizacion de casa completada
