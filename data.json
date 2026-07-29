@@ -1,0 +1,11 @@
+{
+  "login": {
+    "user": "standard_user",
+    "pass": "secret_sauce"
+  },
+  "compra_rapida": ["backpack", "bike-light", "onesie"],
+  "config": {
+    "timeout": 5000,
+    "url": "https://www.saucedemo.com"
+  }
+}

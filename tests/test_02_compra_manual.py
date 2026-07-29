@@ -43,7 +43,6 @@ def test_comprar_pytest(page):
     # Rellenamos nombre, apellido y código postal
     checkout.fill_shipping_info("Salvador", "ceballos", "21110")
     # Pulsamos continuar (si tu método fill_shipping_info no lo hace ya solo)
-    checkout.fill_shipping_info()
     # Verificamos que estamos en la pantalla de 'Overview' (Resumen)
     expect(page).to_have_url("https://www.saucedemo.com/checkout-step-two.html")
 
