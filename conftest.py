@@ -28,7 +28,7 @@ def login_ready(page):
 @pytest.fixture
 def add_backpack(login_ready):
     inventory = InventoryPage(login_ready)
-    inventory.add_backpack()
+    inventory.add_specific_product("backpack")
     inventory.go_to_cart()
     yield login_ready
 

@@ -28,7 +28,7 @@ def test_comprar_pytest(page):
 
     # 5. FASE 2: EL ALMACÉN
     # Añadimos la mochila y clicamos en el icono del carrito
-    inventory.add_backpack()
+    inventory.add_specific_product("backpack")
     inventory.go_to_cart()
     # Verificamos que el viaje al carrito ha funcionado
     expect(page).to_have_url("https://www.saucedemo.com/cart.html")

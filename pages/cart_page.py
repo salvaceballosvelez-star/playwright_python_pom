@@ -10,8 +10,7 @@ class CartPage:
         self.continue_btn = page.locator("[data-test='continue-shopping']")
         self.checkout_btn = page.locator ("[data-test='checkout']")
         self.remove_btn = page.locator("[data-test='remove-sauce-labs-backpack']")
-        self.all_remove_btns = page.locator(".cart_button")
-    
+        self.all_remove_btns = page.locator("[data-test^='remove']")  # Selector para todos los botones de eliminar
     def proceed_to_checkout(self):
         self.checkout_btn.click()
 
@@ -20,9 +19,7 @@ class CartPage:
 
     
     def all_remove_items(self):
-        lista_botones = self.all_remove_btns.all()
-
-        for boton in lista_botones:
-            boton.click()
+        while self.all_remove_btns.count() > 0:
+            self.all_remove_btns.first.click()
 
     
