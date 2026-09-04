@@ -25,4 +25,4 @@ jobs:
         run: playwright install --with-deps chromium
 
       - name: Ejecutar tests
-        run: python -m pytest --headless --slowmo 0
+        run: python -m pytest --slowmo 0
