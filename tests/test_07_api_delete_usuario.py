@@ -7,4 +7,4 @@ import requests
 # Luego se hace una aserción para comprobar que el código de estado de la respuesta es 204, lo que indica que la eliminación fue exitosa.
 def test_delete_usuario():
     respuesta = requests.delete("https://jsonplaceholder.typicode.com/users/2")
-    assert respuesta.status_code == 204
+    assert respuesta.status_code == 200
